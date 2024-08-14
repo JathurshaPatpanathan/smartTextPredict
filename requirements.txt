@@ -1,6 +1,9 @@
-transformers==4.9.2
-torch==1.9.0
+transformers
+torch
 Flask
 gunicorn
+nltk
+requests
+
 
 
