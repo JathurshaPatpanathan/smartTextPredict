@@ -13,6 +13,7 @@ book_text = re.sub(r'[^a-zA-Z\s]', '', book_text)
 book_text = book_text.lower()
 
 # Tokenization and Lemmatization
+nltk.download('all')
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
