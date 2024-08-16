@@ -13,10 +13,10 @@ book_text = re.sub(r'[^a-zA-Z\s]', '', book_text)
 book_text = book_text.lower()
 
 # Tokenization and Lemmatization
-nltk.download('all')
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
+
 tokens = word_tokenize(book_text)
 tokens = [word for word in tokens if word not in stopwords.words('english')]
 lemmatizer = WordNetLemmatizer()
